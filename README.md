@@ -8,30 +8,32 @@ The data used in this project comes from the HR Employee Attrition dataset avail
 
 ## Stakeholders
 **Human Resource Managers:** Can use the model to identify at-risk employees and implement retention strategies.
+
 **Organizational Leaders:** Can leverage insights from the model to improve employee engagement and satisfaction.
+
 **Business Strategists:** Can use the predictive insights to plan and execute better workforce management strategies.
 
 ## Summary of Data Science Steps
-1. Data Exploration
+**1. Data Exploration**
 
--Inspected data types, unique values, and distribution of the target variable.
+   -Inspected data types, unique values, and distribution of the target variable.
 
-2. Data Processing
+**2. Data Processing**
 
--One-hot encoded categorical variables and scaled numerical ones.
+   -One-hot encoded categorical variables and scaled numerical ones.
 
-3. Model Training: Logistic Regression
+**3. Model Training: Logistic Regression**
    
--Two logistic regression models were trained and evaluated using cross-validation.
+   -Two logistic regression models were trained and evaluated using cross-validation.
 
--Iterative functions were defined and used to find the best parameters.
+   -Iterative functions were defined and used to find the best parameters.
 
-4. Model Training: Decision Trees
+**4. Model Training: Decision Trees**
 
--Multiple decision tree models were trained and evaluated.
+   -Multiple decision tree models were trained and evaluated.
 
--Iterative functions were defined and used to find the best parameters.
+   -Iterative functions were defined and used to find the best parameters.
 
-5. Model Evaluation
+**5. Model Evaluation**
 
--The final model was evaluated on the holdout data.
+   -The final model was evaluated on the holdout data.
