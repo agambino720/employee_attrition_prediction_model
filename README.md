@@ -62,7 +62,8 @@ For stakeholders, the implications of using this model are substantial. By accur
 **data:** Directory containing the HR-Employee-Attrition.csv dataset used for the analysis.
 
 ## Links
-**Presentation** https://docs.google.com/presentation/d/1574tq9Vk5slwx3Pt093wnDFCVHATwoRIMk7LDILbz2A/edit?usp=sharing
+**Presentation:** 
+https://docs.google.com/presentation/d/1574tq9Vk5slwx3Pt093wnDFCVHATwoRIMk7LDILbz2A/edit?usp=sharing
 
-**Data Source** 
+**Data Source:**
 https://www.kaggle.com/datasets/itssuru/hr-employee-attrition/data
