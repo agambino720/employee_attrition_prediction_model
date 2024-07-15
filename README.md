@@ -39,8 +39,11 @@ The data used in this project comes from the HR Employee Attrition dataset avail
    -The final model was evaluated on the holdout data.
 
 ## Model Performance on Holdout Data
+
+### Metrics
 The final model used in this analysis is a class weight adjusted decision tree, which was carefully tuned to enhance its performance in predicting employee attrition. This model was chosen because it provided the best balance between identifying employees who might leave and maintaining overall prediction accuracy. The key metrics for this model on the holdout data included an accuracy of 68.03%, with a precision of 0.89, recall of 0.70, and F1-score of 0.79 for non-attrition cases. For predicting attrition, the model achieved a precision of 0.26, recall of 0.55, and F1-score of 0.36. Cross-validation further supported these findings, with a mean recall of 0.41 and a standard deviation of 0.16.
 
+### Implications of Metrics
 This model correctly identified approximately 55% of the actual attrition cases, allowing the business to take proactive measures for more than half of the employees at risk of leaving. However, the model had a precision of 26% for attrition, meaning many predicted attrition cases were not actual attrition cases. The model also misclassified 29.56% (73 out of 247) of non-attrition cases as attrition cases, potentially leading to unnecessary interventions. While there is room for improvement, this model provides a starting point for addressing employee attrition by correctly identifying a significant portion of at-risk employees, which can help in designing targeted retention strategies.
 
 ## Justification of Metrics and Model Evaluation
@@ -55,6 +58,7 @@ For stakeholders, the implications of using this model are substantial. By accur
 **employee_attrition_project.ipynb:** Contains the Jupyter Notebook with all the code, model iterations, and model evaluation related to the project.
 
 **.gitignore:** Specifies files and directories to be ignored by Git.
+
 **data:** Directory containing the HR-Employee-Attrition.csv dataset used for the analysis.
 
 ## Links
