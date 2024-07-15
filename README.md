@@ -37,3 +37,28 @@ The data used in this project comes from the HR Employee Attrition dataset avail
 **5. Model Evaluation**
 
    -The final model was evaluated on the holdout data.
+
+## Model Performance on Holdout Data
+The final model used in this analysis is a class weight adjusted decision tree, which was carefully tuned to enhance its performance in predicting employee attrition. This model was chosen because it provided the best balance between identifying employees who might leave and maintaining overall prediction accuracy. The key metrics for this model on the holdout data included an accuracy of 68.03%, with a precision of 0.89, recall of 0.70, and F1-score of 0.79 for non-attrition cases. For predicting attrition, the model achieved a precision of 0.26, recall of 0.55, and F1-score of 0.36. Cross-validation further supported these findings, with a mean recall of 0.41 and a standard deviation of 0.16.
+
+This model correctly identified approximately 55% of the actual attrition cases, allowing the business to take proactive measures for more than half of the employees at risk of leaving. However, the model had a precision of 26% for attrition, meaning many predicted attrition cases were not actual attrition cases. The model also misclassified 29.56% (73 out of 247) of non-attrition cases as attrition cases, potentially leading to unnecessary interventions. While there is room for improvement, this model provides a starting point for addressing employee attrition by correctly identifying a significant portion of at-risk employees, which can help in designing targeted retention strategies.
+
+## Justification of Metrics and Model Evaluation
+The choice of recall as a key metric is justified in the context of the real-world problem of employee attrition. The consequences of failing to identify at-risk employees can be severe, including increased recruitment and training costs, loss of organizational knowledge, and decreased productivity. By focusing on recall, the model ensures that the business can take timely actions to retain employees, thereby mitigating these negative impacts. The final model, identified based on its performance on the chosen metrics with validation data, was evaluated using holdout data. The performance metrics on the test data reaffirmed the model's effectiveness in identifying attrition cases while maintaining an acceptable level of overall accuracy.
+
+## Implications for Stakeholders
+For stakeholders, the implications of using this model are substantial. By accurately identifying a significant proportion of employees who are at risk of leaving, the business can implement targeted retention strategies, such as employee engagement programs, career development opportunities, and improved working conditions. This proactive approach can reduce turnover costs, maintain workforce stability, and enhance overall employee satisfaction. In the long run, this predictive capability allows the business to foster a more stable and committed workforce, leading to better organizational performance and competitive advantage. By focusing on recall, the business ensures that it is better prepared to handle potential attrition and can take steps to mitigate its impact, thereby supporting a more sustainable and efficient organizational environment.
+
+## Repository Structure
+**README.md:** This file provides an overview of the project and instructions for navigating the repository.
+
+**employee_attrition_project.ipynb:** Contains the Jupyter Notebook with all the code, model iterations, and model evaluation related to the project.
+
+**.gitignore:** Specifies files and directories to be ignored by Git.
+**data:** Directory containing the HR-Employee-Attrition.csv dataset used for the analysis.
+
+## Links
+**Presentation** https://docs.google.com/presentation/d/1574tq9Vk5slwx3Pt093wnDFCVHATwoRIMk7LDILbz2A/edit?usp=sharing
+
+**Data Source** 
+https://www.kaggle.com/datasets/itssuru/hr-employee-attrition/data
